@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="gnss_to_map" type="gnss_to_map.py" name="gnss_to_map" output="screen">
+    </node>
+</launch>
