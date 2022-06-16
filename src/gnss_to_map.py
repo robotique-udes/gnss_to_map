@@ -48,6 +48,7 @@ class GnssToMap:
         x, y = calc_map_coord(self.origin_lat, self.origin_long, msg.latitude, msg.longitude)
         pose = PoseWithCovarianceStamped()
         pose.header.frame_id = "map"
+        pose.header.stamp = rospy.Time.now()
         pose.pose.pose.position.x = x
         pose.pose.pose.position.y = y
         pose.pose.pose.position.z = 0
